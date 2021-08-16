@@ -36,7 +36,6 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 if (ValUsername.equals("admin@gmail.com") && ValPassword.equals("123456")) {
-                    Log.i("Login Screen", "in onClick if");
 
                     Intent intent = new Intent(LoginActivity.this,WelcomeActivity.class);
                     intent.putExtra("userdata",ValUsername);
@@ -47,7 +46,6 @@ public class LoginActivity extends AppCompatActivity {
                 }else {
 
                     Toast.makeText(LoginActivity.this,"Username or Password is wrong.", Toast.LENGTH_SHORT).show();
-                    Log.i("Login Screen","In Onclick");
                 }
             }
         });
